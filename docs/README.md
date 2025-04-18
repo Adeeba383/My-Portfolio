@@ -28,7 +28,7 @@ Welcome to my personal portfolio! This is a clean, responsive, and beginner-frie
 
 ## 🔗 Live Demo
 
-Check it out live here: [GitHub Pages Link](https://your-username.github.io/My Portfolio/)  
+Check it out live here: [GitHub Pages Link](https://adeeba383.github.io/My-Portfolio/)  
 *(Replace with your actual GitHub Pages link once deployed)*
 
 ## 📜 License
