@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h2 class="user">ADEEBA</h2>
+        <nav>
+            <ul class="navigate">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br> <br> <br>
+    <main>
+        <h2 class="heading2" id="Portfolio">My Work</h2>
+        <section class="Portfolio">
+            <div class="work" id="games" onclick="showProjects('games')">
+                <h3>Mini Arcade Collection</h3>
+            </div>
+            <div class="work" id="utility" onclick="showProjects('utility')">
+                <h3>UI Widgets Showcase</h3>
+            </div>
+            <div class="work" id="web" onclick="showProjects('web')">
+                <h3>Web Layout Gallery</h3>
+            </div>
+        </section>
+        <section class="projects" id="gamesProjects">
+            <h3>Games Projects</h3><br> <br>
+            <div class="project" id="Dice">Roll the Dice </div>
+            <div class="project" id="NumG">Guess the Number </div>
+            <div class="project" id="RandGN">Generate Random Number </div>
+        </section>
+        <section class="projects" id="utilityProjects">
+            <h3>UI Widgets Projects</h3> <br> <br>
+            <div class="project" id="CountP">Basic Counter Porgram</div>
+            <div class="project" id="PassG">Random Password Generator</div>
+            <div class="project" id="TempC">Temperature Converter</div>
+        </section>
+
+        <section class="projects" id="webProjects">
+            <h3>Web Layout Projects</h3> <br> <br>
+            <div class="project" id="Magazine">Magazine</div>
+            <div class="project" id="Tribute">Tribute Page</div>
+            <div class="project" id="Survey">Survey Form</div>
+        </section>
+    </main>
+    <br> <br> <br>
+    <footer>
+        <h4>&copy; Adeeba</h4>
+    </footer>
+    <script src="index.js"></script> 
+</body>
+</html>

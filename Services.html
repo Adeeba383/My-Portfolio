@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h2 class="user">ADEEBA</h2>
+        <nav>
+            <ul class="navigate">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br> <br> <br> 
+    <main>
+        <h2 class="heading2" id="Services">Services</h2>
+        <section class="Services"> 
+            <div class="service-box">
+                <div class="ser" onclick="show('responsive')">Responsive Website Development</div>
+                <div id="responsive" class="about_services">
+                    I create websites that adapt seamlessly across all devices — from desktops to smartphones.
+                    This ensures users get a smooth and consistent experience no matter their screen size
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="ser" onclick="show('performance')">Web Performance Optimization</div>
+                <div id="performance" class="about_services">
+                    I fine-tune websites for faster load times and better performance.
+                    This includes minimizing resources and optimizing code for an efficient user journey.
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="ser" onclick="show('design')">UI/UX Design Implementation</div>
+                <div id="design" class="about_services">
+                    I bring user interface designs to life with clean, intuitive layouts.
+                    My focus is on delivering visually engaging and user-friendly web experiences.
+                </div>
+            </div>
+        </section>
+    </main>
+    <br> <br> <br>
+    <footer>
+        <h4>&copy; Adeeba</h4>
+    </footer> 
+    <script src="index.js"></script> 
+</body>
+</html>

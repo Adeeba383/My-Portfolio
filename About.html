@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h2 class="user">ADEEBA</h2>
+        <nav>
+            <ul class="navigate">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br> <br> <br>
+    <main>
+    <h2 class="heading2" id="About">About Me</h2>
+        <section class="About">
+            <img src="images/pic.jpeg" alt="My Pic" width="300px" id="image">
+            <div id="info">
+                <p>I'm Adeeba Malik, a front-end developer based in Pakistan with a passion for crafting responsive and visually engaging websites. I specialize in HTML, CSS, and JavaScript to build clean, user-friendly interfaces.
+                </p>
+                <ul class="navigate">
+                    <li><a href="#Skills" onclick="showSection('skills')">Skills</a></li>
+                    <li><a href="#Experience" onclick="showSection('experience')">Experience</a></li>
+                    <li><a href="#Education" onclick="showSection('education')">Education</a></li>
+                </ul>
+                <div id="skills" class="about_section">
+                    <ul>
+                        <li><span>Front-end dev</span><br>Responsive Web Design</li>
+                        <li><span>UI/UX</span><br>UI/UX Design Implementation</li>
+                        <li><span>Optimization</span><br>Web Performance Optimization</li>
+                    </ul>
+                </div>
+                <div id="experience" class="about_section">
+                    <p>No experience yet, but currently learning and building personal projects.</p>
+                </div>
+                <div id="education" class="about_section"> 
+                    <p>Bachelor's in Electrical Engineering - International Islamic University</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <br> <br> <br>
+    <footer>
+        <h4>&copy; Adeeba</h4>
+    </footer> 
+    <script src="index.js"></script> 
+</body>
+</html>

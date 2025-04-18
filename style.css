@@ -1,0 +1,530 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    font-family: monospace, sans-serif;
+}
+
+/* Header Section */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #eae0c8bd; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#Home {
+    padding-top: 100px; 
+}
+
+.user::before {
+    content: "\f007";
+    font-family: "Font Awesome 6 Free";
+    margin-right: 8px;
+}
+
+.user {
+    color: #536878;
+}
+
+.user::first-letter {
+    color: #fd6c38;
+}
+
+.navigate {
+    list-style-type: none;
+    text-align: end;
+    word-spacing: 30px;
+    padding: 10px;
+}
+  
+.navigate li {
+    display: inline;
+}
+  
+.navigate li a {
+    text-decoration: none;
+    color: #536878;
+    font-size: 20px;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+  
+.navigate li a:hover {
+    text-decoration: underline;
+    color: #fd6c38;
+}
+  
+
+#sub_heading {
+    color: #536878;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+    font-family: monospace, sans-serif;
+}
+
+h1 {
+    color: #536878;
+    font-size: 70px;
+    text-align: center;
+    padding: 10px 30px;
+    margin-bottom: 150px;
+}
+
+#red {
+    color: #fd6c38;
+}
+
+
+/* About Section */
+.About {
+    background-color: #eae0c8;
+    color: #536878;
+    display: grid;
+    grid-template-columns: 300px auto;
+    column-gap: 30px;
+    padding: 80px 50px;
+    row-gap: 20px;
+}
+
+.About h2 {
+    grid-column: 1 / -1;
+    font-size: 50px;
+    color: #536878;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#image{
+    border-image: round;
+    border-radius: 15px;
+}
+
+.about_section{
+    display: none;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: monospace, sans-serif;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+
+}
+#skills{
+    display: block;
+}
+#skills ul li{
+    margin: 10px 10px;
+    text-align: left;
+}
+#skills ul li span{
+    color: #fd6c38;
+
+}
+#info {
+    text-align: center;
+}
+#experience{
+    color: #fd6c38;
+}
+
+#education{
+    color: #fd6c38;
+}
+.About p {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.About ul {
+    padding-top: 20px;
+    justify-self: center;
+}
+
+/* Services Section */
+.Services {
+    padding: 80px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.Services h2 {
+    grid-column: 1 / -1;
+    font-size: 50px;
+    color: #536878;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.heading2 {
+    text-align: center;
+    color: #fd6c38;
+    font-size: 70px;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.ser {
+    background-color: #536878;
+    color: #eae0c8;
+    opacity: 0.9;
+    max-width: 300px;
+    height: 250px;
+    text-align: center;
+    padding-top: 70px;
+    font-size: 2rem;
+    border-radius: 10px;
+    margin: auto;
+}
+.about_services {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 18px;
+    background-color: #f4f4f4;
+    color: #333;
+    border-left: 5px solid #fd6c38;
+    border-right: 5px solid #fd6c38;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+.about_services.active {
+    display: block;
+    font-size: 20px;
+    background-color: #fff8ed;
+    color: #536878;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ser:hover {
+    cursor: pointer;
+    color: #536878;
+    background-color: #eae0c8;
+    border: 2px solid #536878;
+}
+
+/* Portfolio Section */
+.Portfolio {
+    background-color: #eae0c8;
+    padding: 80px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.work {
+    max-width: 300px;
+    height: 300px;
+    background-color: #536878;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 2rem;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.work h3{
+    visibility: visible;
+    background-color: #ebc263
+}
+
+.work:hover h3{
+    visibility: hidden;
+}
+.work:hover {
+    background-color: #eae0c8;
+    background-image: none;
+    max-width: 320px;
+    height: 320px;
+    color: black;
+    cursor: pointer;
+    border: none;
+    box-shadow: 5px 5px 5px 5px  rgb(21, 24, 21);
+}
+#games {
+    background-image: url(images/game.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#utility {
+    background-image: url(images/utility.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#web {
+    background-image: url(images/web.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects {
+    white-space: nowrap;
+    padding: 40px 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+.projects h3 {
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #536878;
+}
+
+.project {
+    background-color: #536878;
+    color: #eae0c8;
+    display: inline-block;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 0 60px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.project:hover {
+    text-align: center;
+    white-space: normal;
+    font-family: monospace, sans-serif;
+    padding: 80px 20px 20px 20px;
+    background-color: #eae0c8;
+    cursor: pointer;
+} 
+#Dice{
+    background-image: url(images/dice.JPG);
+    background-size: cover;
+    background-position: center; 
+    font-size: 0px; 
+}
+#Dice:hover{
+    background-image: none;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 5px 5px 5px 0px black;
+    color: #fd6c38;
+}
+#NumG{
+    background-image: url(images/NumG.JPG);
+    background-size: cover;
+    background-position: center;
+    font-size: 0px;
+}
+#NumG:hover{
+    background-image: none;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 5px 5px 5px 0px black;
+    color: #fd6c38;
+}
+#RandGN{
+    background-image: url(images/randG.JPG);
+    background-size: cover;
+    background-position: center;
+    font-size: 0px;
+}
+#RandGN:hover{
+    background-image: none;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 5px 5px 5px 0px black;
+    color: #fd6c38;
+}
+#CountP{
+    background-image: url(images/countG.JPG);
+    background-size: cover;
+    background-position: center;
+    font-size: 0px;
+}
+#CountP:hover{
+    background-image: none;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 5px 5px 5px 0px black;
+    color: #fd6c38;
+}
+#PassG{
+    background-image: url(images/passG.JPG);
+    background-size: cover;
+    background-position: center;
+    font-size: 0px;
+}
+#PassG:hover{
+    background-image: none;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 5px 5px 5px 0px black;
+    color: #fd6c38;
+}
+#TempC{
+    background-image: url(images/temp.JPG);
+    background-size: cover;
+    background-position: center;
+    font-size: 0px;
+}
+#TempC:hover{
+    background-image: none;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 5px 5px 5px 0px black;
+    color: #fd6c38;
+}
+#Magazine{
+    background-image: url(images/magazine.JPG);
+    background-size: cover;
+    background-position: center;
+    font-size: 0px;
+}
+#Magazine:hover{
+    background-image: none;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 5px 5px 5px 0px black;
+    color: #fd6c38;
+}
+#Tribute{
+    background-image: url(images/tribute.JPG);
+    background-size: cover;
+    background-position: center;
+    font-size: 0px;
+}
+#Tribute:hover{
+    background-image: none;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 5px 5px 5px 0px black;
+    color: #fd6c38;
+}
+#Survey{
+    background-image: url(images/survey.JPG);
+    background-size: cover;
+    background-position: center;
+    font-size: 0px;
+}
+#Survey:hover{
+    background-image: none;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 5px 5px 5px 0px black;
+    color: #fd6c38;
+}
+
+/* Contact Section */
+.Contact {
+    padding: 80px 50px;
+}
+
+.Contact p,
+.Contact ul {
+    text-align: center;
+    color: #536878;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#mail::before,
+#linkedin::before,
+#git::before {
+    margin-right: 8px;
+    color: #fd6c38;
+}
+
+#mail::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    content: "\f0e0";
+}
+
+#linkedin::before {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+    content: "\f08c";
+}
+
+#git::before {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+    content: "\f09b";
+}
+
+/* Footer */
+footer {
+    background-color: #eae0c8;
+    padding: 30px;
+    color: #536878;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Download Button */
+.download-btn {
+    width: fit-content;
+    height: fit-content;
+    background-color: #536878;
+    text-decoration: none;
+    color: #eae0c8;
+    padding: 20px;
+    border-radius: 5px;
+    display: block;
+    margin: 30px auto;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: monospace, sans-serif;
+}
+
+.download-btn:hover {
+    background-color: #eae0c8;
+    color: #fd6c38;
+    cursor: pointer;
+    border: 2px solid #fd6c38;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1024px) {
+    #About ul {
+        text-align: center;
+    }
+    nav ul {
+        word-spacing: 10px;
+        padding: 5px;
+        text-align: center;
+    }
+}
