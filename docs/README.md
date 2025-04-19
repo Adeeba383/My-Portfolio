@@ -21,15 +21,9 @@ Welcome to my personal portfolio! This is a clean, responsive, and beginner-frie
 - JavaScript
 - [Font Awesome](https://cdnjs.com/libraries/font-awesome)
 
-
-## 🧑‍💻 Author
-
-**Adeeba** — Front-End Developer passionate about building beautiful and functional web experiences.
-
 ## 🔗 Live Demo
 
-Check it out live here: [GitHub Pages Link](https://adeeba383.github.io/My-Portfolio/)  
-*(Replace with your actual GitHub Pages link once deployed)*
+Check it out live here: [https://adeeba383.github.io/My-Portfolio/]  
 
 ## 📜 License
 
